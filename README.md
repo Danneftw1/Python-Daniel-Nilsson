@@ -37,7 +37,10 @@ This repo is about my coding development with python
 [e8]:https://github.com/kokchun/Python-course-AI22/blob/main/Exercises/08-file-handling.ipynb
 [e9]:https://github.com/kokchun/Python-course-AI22/blob/main/Exercises/09-dictionary-exercises.ipynb
 [e10]:https://github.com/kokchun/Python-course-AI22/blob/main/Exercises/E10-numpy.ipynb
+
+<!-- Ctrl K + Ctrl C för att ta bort #
 ----------------------------------------------------------------------------------
+
 # Exercises from different websites
 ## First website (placeholder)
 ------------------------------------------------------------------------------
@@ -47,4 +50,4 @@ This repo is about my coding development with python
 
 # Personal projects
 ## project 1 (placeholder)
-------------------------------------------------------------------------------
+------------------------------------------------------------------------------ -->
