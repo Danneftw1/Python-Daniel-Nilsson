@@ -7,7 +7,7 @@ This repo is about my coding development with python
 
 :white_check_mark: = Done
 -------------
-:arrow_forward: = Started, almost finised
+:arrow_forward: = Started
 ---------------
 :sos: = Need help with
 ---------
@@ -16,14 +16,14 @@ This repo is about my coding development with python
 | ----------------------------------------------|---------------------------|
 | [Exercises 00][e0] :white_check_mark:         | Counting with python      |
 | [Exercises 01][e1] :white_check_mark:         | If-statements             |
-| [Exercises 03][e2] :arrow_forward::sos:       | While-statements          |
-| [Exercises 04][e2]                            | Lists                     |
-| [Exercises 05][e2]                            | Strings                   |
-| [Exercises 06][e2]                            | Functions                 |
-| [Exercises 07][e2]                            | Exceptions                |
-| [Exercises 08][e2]                            | File-handling             |
-| [Exercises 09][e2]                            | Dictionary                |
-| [Exercises 10][e2]                            |Numpy                      |
+| [Exercises 02][e2] :white_check_mark:         | While-statements          |
+| [Exercises 03][e3]                            | Lists                     |
+| [Exercises 04][e4]                            | Strings                   |
+| [Exercises 05][e5]                            | Functions                 |
+| [Exercises 06][e6]                            | Exceptions                |
+| [Exercises 07][e7]                            | File-handling             |
+| [Exercises 08][e8]                            | Dictionary                |
+| [Exercises 09][e9]                            |Numpy                      |
 
 
 [e0]: https://github.com/kokchun/Python-course-AI22/blob/main/Exercises/00-Count-with-Python-exercise.ipynb
