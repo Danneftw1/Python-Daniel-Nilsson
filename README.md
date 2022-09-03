@@ -15,7 +15,7 @@ This repo is about my coding development with python
 | [Exercises 00][e0] :white_check_mark:         | Counting with python      |
 | [Exercises 01][e1] :white_check_mark:         | If-statements             |
 | [Exercises 02][e2] :white_check_mark:         | While-statements          |
-| [Exercises 03][e3]                            | For-statements            |
+| [Exercises 03][e3] :arrow_forward:            | For-statements            |
 | [Exercises 04][e4]                            | Lists                     |
 | [Exercises 05][e5]                            | Strings                   |
 | [Exercises 06][e6]                            | Functions                 |
@@ -36,7 +36,7 @@ This repo is about my coding development with python
 [e9]:https://github.com/kokchun/Python-course-AI22/blob/main/Exercises/09-dictionary-exercises.ipynb
 [e10]:https://github.com/kokchun/Python-course-AI22/blob/main/Exercises/E10-numpy.ipynb
 
-<!-- Ctrl K + Ctrl C för att ta bort #
+<!-- #Ctrl K + Ctrl C för att ta bort -->
 ----------------------------------------------------------------------------------
 
 # Exercises from different websites
@@ -48,4 +48,4 @@ This repo is about my coding development with python
 
 # Personal projects
 ## project 1 (placeholder)
------------------------------------------------------------------------------- -->
+------------------------------------------------------------------------------
