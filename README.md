@@ -16,7 +16,7 @@ This repo is about my coding development with python
 | [Exercises 01][e1] :white_check_mark:         | If-statements             |
 | [Exercises 02][e2] :white_check_mark:         | While-statements          |
 | [Exercises 03][e3] :white_check_mark:         | For-statements            |
-| [Exercises 04][e4]                            | Lists                     |
+| [Exercises 04][e4] :arrow_forward:            | Lists                     |
 | [Exercises 05][e5]                            | Strings                   |
 | [Exercises 06][e6]                            | Functions                 |
 | [Exercises 07][e7]                            | Exceptions                |
