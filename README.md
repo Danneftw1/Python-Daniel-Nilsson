@@ -15,7 +15,7 @@ This repo is about my coding development with python
 | [Exercises 00][e0] :white_check_mark:         | Counting with python      |
 | [Exercises 01][e1] :white_check_mark:         | If-statements             |
 | [Exercises 02][e2] :white_check_mark:         | While-statements          |
-| [Exercises 03][e3] :arrow_forward:            | For-statements            |
+| [Exercises 03][e3] :white_check_mark:         | For-statements            |
 | [Exercises 04][e4]                            | Lists                     |
 | [Exercises 05][e5]                            | Strings                   |
 | [Exercises 06][e6]                            | Functions                 |
