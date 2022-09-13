@@ -4,3 +4,5 @@
 4. Everything must be made as simple as possible. But not simpler. - Albert Einstein
 5. Nothing in life is to be feared, it is only to be understood. Now is the time to understand more, so that we may fear less. - Marie Curie
 6. If I have seen further it is by standing on the shoulders of Giants. - Isaac Newton
+
+Authors: Isaac NewtonAlbert EinsteinNiels BohrMarie CurieTerry Pratchett
