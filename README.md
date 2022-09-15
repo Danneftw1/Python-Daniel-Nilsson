@@ -21,7 +21,7 @@ This repo is about my coding development with python
 | [Exercises 06][e6] :arrow_forward:            | Functions                 |
 | [Exercises 07][e7] :white_check_mark:         | Exceptions                |
 | [Exercises 08][e8] :white_check_mark:         | File-handling             |
-| [Exercises 09][e9]                            | Dictionary                |
+| [Exercises 09][e9] :arrow_forward:            | Dictionary                |
 | [Exercises 10][e10]                           | Numpy                     |
 
 [e0]:https://github.com/kokchun/Python-course-AI22/blob/main/Exercises/00-Count-with-Python-exercise.ipynb
