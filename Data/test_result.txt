@@ -17,3 +17,83 @@ Erik Eriksson 31
 Gore Bord 55
 Jakob Kallander 65
 Fredrika Ulven 10
+----------------------------------------
+Sorterat alfabetisk ordning
+
+Adam Gustafsson 25
+Björn Björnsson 39
+Bose Bosseson 32
+Ella Ester 41
+Emil Johansson 23
+Emma Boden 32
+Erik Eriksson 31
+Fredrika Ulven 10
+Gore Bord 55
+Hanna Karlsson 23 
+Håkan Håkanson 24
+Ida Håkansson 23
+Jakob Kallander 65
+Johan Johansson 42
+Jonas Jonasson 31
+Karl Karlsson 32
+Ove Karlsten 41
+Sven Erik Karlsson 13
+Sven Erik Lundin 39
+
+----------------------------------------
+Sorterat efter po�ng
+
+Sven Erik Lundin 39
+Sven Erik Karlsson 13
+Ove Karlsten 41
+Karl Karlsson 32
+Jonas Jonasson 31
+Johan Johansson 42
+Jakob Kallander 65
+Ida Håkansson 23
+Håkan Håkanson 24
+Hanna Karlsson 23 
+Gore Bord 55
+Fredrika Ulven 10
+Erik Eriksson 31
+Emma Boden 32
+Emil Johansson 23
+Ella Ester 41
+Bose Bosseson 32
+Björn Björnsson 39
+Adam Gustafsson 25
+
+----------------------------------------
+Sorterat efter betyg
+
+
+Betyg F
+Sven Erik Karlsson 13
+Fredrika Ulven 10
+
+Betyg E
+Ida Håkansson 23
+Håkan Håkanson 24
+Hanna Karlsson 23 
+Emil Johansson 23
+Adam Gustafsson 25
+
+Betyg D
+Sven Erik Lundin 39
+Karl Karlsson 32
+Jonas Jonasson 31
+Erik Eriksson 31
+Emma Boden 32
+Bose Bosseson 32
+Björn Björnsson 39
+
+Betyg C
+Ove Karlsten 41
+Johan Johansson 42
+Ella Ester 41
+
+Betyg B
+Gore Bord 55
+
+Betyg A
+Jakob Kallander 65
