@@ -38,3 +38,11 @@ Fours: 16536 Probability: 0.16536
 Fives: 16725 Probability: 0.16725
 Sixes: 16622 Probability: 0.16622
  
+Number of rolls: 100000
+Ones: 16435 Probability: 0.16435
+Twos: 16699 Probability: 0.16699
+Threes: 16941 Probability: 0.16941
+Fours: 16846 Probability: 0.16846
+Fives: 16436 Probability: 0.16436
+Sixes: 16643 Probability: 0.16643
+ 
