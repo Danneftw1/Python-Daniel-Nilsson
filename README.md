@@ -22,7 +22,7 @@ This repo is about my coding development with python
 | [Exercises 07][e7] :white_check_mark:         | Exceptions                |
 | [Exercises 08][e8] :white_check_mark:         | File-handling             |
 | [Exercises 09][e9] :arrow_forward:            | Dictionary                |
-| [Exercises 10][e10]                           | Numpy                     |
+| [Exercises 10][e10] :arrow_forward:           | Numpy                     |
 
 [e0]:https://github.com/kokchun/Python-course-AI22/blob/main/Exercises/00-Count-with-Python-exercise.ipynb
 [e1]:https://github.com/kokchun/Python-course-AI22/blob/main/Exercises/01-if-statement-exercise.ipynb
