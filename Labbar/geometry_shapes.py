@@ -1,15 +1,6 @@
 from __future__ import annotations
 import math
-from matplotlib.pyplot import plot as plt
-from matplotlib.patches import Rectangle
-from matplotlib.patches import Circle
-import numpy as np
 
-
-#TODO extra, plotta allt
-#TODO kolla med Kokchun ifall translationen fungerar som den ska
-#TODO testa i .py fil
-#TODO kommentera allt?
 
 #-------------------------------SHAPE CLASS------------------------------------------------------
 class Shapes: # Super klassen (överklassen)
@@ -54,40 +45,25 @@ class Shapes: # Super klassen (överklassen)
 
 
 #----------------------------OVERLOADERS-----------------------------------------------------
-    def __lt__(self, object_2):
+    def __lt__(self, other):
         """Less than"""
-        if self.area < object_2.area:
-            return True
-        else:
-            return False
+        return self.area < other.area
 
-    def __gt__(self, object_2):
+    def __gt__(self, other):
         """Greater than"""
-        if self.area > object_2.area:
-            return True
-        else:
-            return False
+        return self.area > other.area
 
-    def __le__(self, object_2):
+    def __le__(self, other):
         """Less or equal"""
-        if self.area <= object_2.area:
-            return True
-        else:
-            return False # return self.area == other.area
+        return self.area <= other.area
 
-    def __ge__(self, object_2):
+    def __ge__(self, other):
         """Greater or equal"""
-        if self.area >= object_2.area:
-            return True
-        else:
-            return False
+        return self.area >= other.area
 
-    def __ne__(self, object_2): #other som konvention
+    def __ne__(self, other): 
         """Not equal"""
-        if self.area != object_2.area:
-            return True
-        else:
-            return False
+        return self.area != other.area
 
 
 #----------------------------MOVER------------------------------------------------------------
@@ -103,7 +79,6 @@ class Shapes: # Super klassen (överklassen)
         self.x_pos += x
         self.y_pos += y
 
-
 #----------------------------------------------------------------------------------------------------
 #                                         CIRCLE CLASS
 #----------------------------------------------------------------------------------------------------
@@ -111,9 +86,7 @@ class Circle(Shapes):
     """Circle class"""
     def __init__(self, x_pos: float, y_pos: float, radius: float):
         super().__init__(x_pos, y_pos) # what is sent up to super class
-
         self.radius = radius
-        self._circumference = 2 * math.pi * radius # ÄNDRA SOM MED AREA
 
     """String conversion for attributes Circle class"""
     def __repr__(self) -> None:
@@ -126,7 +99,7 @@ class Circle(Shapes):
 
     @property
     def circumference(self) -> (int | float):
-        return self._circumference
+        return 2 * math.pi * self.radius
 
     @circumference.setter
     def circumference(self, value: (int | float)):
@@ -153,26 +126,23 @@ class Circle(Shapes):
         self._radius = value 
 
 #---------------------------------METHODS----------------------------------------------
-    #Is_unit_circle ÄNDRA
-    def circle_checker(self) -> bool: # if the circle has a radius of 1 and mid-point is in origo(x,y = 0) its a unit circle
+
+    def is_unit_circle(self) -> bool: # if the circle has a radius of 1 and mid-point is in origo(x,y = 0) its a unit circle
         """Check if the circle is a unit circle"""
-        return self.radius == 1 and self.x_pos == 0  and self.y_pos == 0:  
+        return self.radius == 1 and self.x_pos == 0  and self.y_pos == 0  
 
     def is_inside_circle(self, x, y):
         return (x - self.x_pos)**2 + (y - self.y_pos)**2 < self.radius**2 # Source: https://stackoverflow.com/questions/481144/equation-for-testing-if-a-point-is-inside-a-circle
         # calculation of euclidian distance of the new points compared to first xy points. Also has radius of circle which tells us how big the circle is.
-
     
-    def __eq__(self, object_2: int | float):# Checks if the circle area is the same, if it is, it returns true
+    def __eq__(self, other: int | float):# Checks if the circle area is the same, if it is, it returns true
         """Check if rectangle has same area""" 
-        if self.area == object_2:
-            return True
-        else:
-            return False
+        return self.area == other
 
 #----------------------------------------------------------------------------------------------------
 #                                         RECTANGLE CLASS
 #----------------------------------------------------------------------------------------------------
+#FFFFFIIIIIIIIIXXXXXXAAAAAAA UML
 
 class Rectangle(Shapes):
     """Rectangle class"""
@@ -181,15 +151,13 @@ class Rectangle(Shapes):
 
         self.base = base
         self.height = height
-        self.circumference = base + height # fixa uträkning
-        self.area = base * height
 
     """String conversion for attributes Rectangle class"""
     def __repr__(self) -> None:
         return f"{self.x_pos}{self.y_pos}{self.base}{self.height}"
 
     def __str__(self) -> None:
-        return f"X-position is: {self.x_pos} Y-position is: {self.y_pos} base is: {self.base} and height is: {self.height}"
+        return f"Rectangles X-position is: {self.x_pos} Y-position is: {self.y_pos} base is: {self.base} and height is: {self.height}"
 
 
     @property
@@ -217,19 +185,15 @@ class Rectangle(Shapes):
         self._height = value 
 
     @property
-    def radius(self) -> int:
-        return self._radius
+    def circumference(self) -> int:
+        return (self.base + self.height)**2
 
-    @radius.setter #ÄNDRA NAMN
-    def radius(self, value: (int | float)):
-        if not isinstance(value, (int, float)):
-            raise TypeError(f"Number must be an int or float, not {type(value)}")
-        if not (0 <= value <= 10):
-            raise ValueError("Number must be between 0 and 10")
-        self._radius = value 
+    @property
+    def area(self) -> int:
+        return self.base * self.height
 
 #---------------------------------METHODS----------------------------------------------
-    def square_checker(self, base, height) -> bool: # checks if the rectangle is a square or not
+    def square_checker(self) -> bool: # checks if the rectangle is a square or not
         """Checks if rectangle is a square or not"""
         if self.base == self.height: # checks if the base and height are the same measurements, if they are, its a square
             return True
@@ -238,12 +202,12 @@ class Rectangle(Shapes):
     
     def is_inside_rectangle(self, x, y):
         """Checks if point is inside rectangle""" # FIXA
-        return (x - self.x_pos)**2 + (y - self.y_pos)**2 < self.area**2 # Euclidian distance (without squareroot)
+        if (x + self.base/2) * (y + self.height/2):
+            return True
+        return False
+        # (x - self.x_pos)**2 + (y - self.y_pos)**2 < self.area**2 # Euclidian distance (without squareroot)
 
 
     def __eq__(self, object_2: int | float):# Checks is the area of the rectangles are the same, if so, it return True.
         """Check if rectangle has same area"""
-        if self.area == object_2:
-            return True
-        else:
-            return False
+        return self.area == object_2
