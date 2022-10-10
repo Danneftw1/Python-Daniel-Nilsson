@@ -202,7 +202,7 @@ class Rectangle(Shapes):
     
     def is_inside_rectangle(self, x, y):
         """Checks if point is inside rectangle""" # FIXA
-        if (x + self.base/2) * (y + self.height/2):
+        if (x - self.base/2) * (y + self.height/2):
             return True
         return False
         # (x - self.x_pos)**2 + (y - self.y_pos)**2 < self.area**2 # Euclidian distance (without squareroot)
