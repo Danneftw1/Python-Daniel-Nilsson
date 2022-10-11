@@ -10,11 +10,11 @@ class Shapes: # Super klassen (överklassen)
         self.x_pos = x_pos
         self.y_pos = y_pos
 
-    def __repr__(self) -> None:
+    def __repr__(self) -> str:
         return f"{self.x_pos}{self.y_pos}"
 
-    def __str__(self) -> None:
-        return f"X-position is: {self.x_pos} and Y-position is: {self.y_pos}"
+    def __str__(self) -> str:
+        return f"Shape X-position is: {self.x_pos} and Y-position is: {self.y_pos}"
 
 #---------------------------GETTER & SETTER X_POS--------------------------------------------   
     @property #readable
@@ -89,10 +89,10 @@ class Circle(Shapes):
         self.radius = radius
 
     """String conversion for attributes Circle class"""
-    def __repr__(self) -> None:
+    def __repr__(self) -> str:
         return f"{self.x_pos}{self.y_pos}{self.radius}"
 
-    def __str__(self) -> None: #skriv ut formen
+    def __str__(self) -> str:
         return f"X-position is: {self.x_pos} Y-position is: {self.y_pos} and radius is: {self.radius}"
 
 #-----------------------------GETTER & SETTER----------------------------------------
@@ -131,7 +131,7 @@ class Circle(Shapes):
         """Check if the circle is a unit circle"""
         return self.radius == 1 and self.x_pos == 0  and self.y_pos == 0  
 
-    def is_inside_circle(self, x, y):
+    def is_inside_circle(self, x, y) -> bool:
         return (x - self.x_pos)**2 + (y - self.y_pos)**2 < self.radius**2 # Source: https://stackoverflow.com/questions/481144/equation-for-testing-if-a-point-is-inside-a-circle
         # calculation of euclidian distance of the new points compared to first xy points. Also has radius of circle which tells us how big the circle is.
     
@@ -153,10 +153,10 @@ class Rectangle(Shapes):
         self.height = height
 
     """String conversion for attributes Rectangle class"""
-    def __repr__(self) -> None:
+    def __repr__(self) -> str:
         return f"{self.x_pos}{self.y_pos}{self.base}{self.height}"
 
-    def __str__(self) -> None:
+    def __str__(self) -> str:
         return f"Rectangles X-position is: {self.x_pos} Y-position is: {self.y_pos} base is: {self.base} and height is: {self.height}"
 
 
@@ -200,7 +200,7 @@ class Rectangle(Shapes):
         else:
             return False
     
-    def is_inside_rectangle(self, x, y):
+    def is_inside_rectangle(self, x, y) -> bool:
         """Checks if point is inside rectangle""" # FIXA
         if (x - self.base/2) * (y + self.height/2):
             return True
