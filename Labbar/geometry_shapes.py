@@ -142,7 +142,6 @@ class Circle(Shapes):
 #----------------------------------------------------------------------------------------------------
 #                                         RECTANGLE CLASS
 #----------------------------------------------------------------------------------------------------
-#FFFFFIIIIIIIIIXXXXXXAAAAAAA UML
 
 class Rectangle(Shapes):
     """Rectangle class"""
@@ -202,7 +201,7 @@ class Rectangle(Shapes):
     
     def is_inside_rectangle(self, x, y) -> bool:
         """Checks if point is inside rectangle""" # FIXA
-        if (x - self.base/2) * (y + self.height/2):
+        if self.x_pos - self.base/2 <= x.self + self.height/2 and self.y_pos + self.base/2 
             return True
         return False
         # (x - self.x_pos)**2 + (y - self.y_pos)**2 < self.area**2 # Euclidian distance (without squareroot)
