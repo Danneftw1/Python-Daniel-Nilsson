@@ -200,11 +200,10 @@ class Rectangle(Shapes):
             return False
     
     def is_inside_rectangle(self, x, y) -> bool:
-        """Checks if point is inside rectangle""" # FIXA
-        if self.x_pos - self.base/2 <= x.self + self.height/2 and self.y_pos + self.base/2 
+        """Checks if point is inside rectangle""" # Recieved help from Max and Andreas for this solution
+        if self.x_pos - self.width / 2 <= x <= self.x_pos + self.width / 2 and self.y_pos - self.height / 2 <= y <= self.y_pos + self.height / 2:
             return True
         return False
-        # (x - self.x_pos)**2 + (y - self.y_pos)**2 < self.area**2 # Euclidian distance (without squareroot)
 
 
     def __eq__(self, object_2: int | float):# Checks is the area of the rectangles are the same, if so, it return True.
